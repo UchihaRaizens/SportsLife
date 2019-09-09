@@ -1,4 +1,4 @@
-package com.example.sportslife;
+package com.example.sportslife.userServices;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 @Entity
-@Table
+@Table(name = "user_role")
 public class UserRole {
 
 	@Id
