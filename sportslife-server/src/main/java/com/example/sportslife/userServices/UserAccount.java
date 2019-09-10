@@ -48,6 +48,10 @@ public class UserAccount {
 	@Column(name = "created")
 	private Date created;
 
+	public UserAccount() {
+		
+	}
+	
 	public UserAccount(Long id, String firstName, String lastName, String email, String hashedPassword,
 			UserRole userRoleID, Date created) {
 		this.id = id;
@@ -59,6 +63,7 @@ public class UserAccount {
 		this.created = created;
 	}
 
+	
 	public Long getId() {
 		return id;
 	}
